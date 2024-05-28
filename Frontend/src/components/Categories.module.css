@@ -1,0 +1,56 @@
+.categories_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 1rem;
+}
+
+.title {
+    display: flex;
+    gap: 4rem;
+    position: absolute;
+    top: 1px;
+    left: 10px;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.categories {
+    display: flex;
+    gap: 4rem;
+    margin-top: 6rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.general {
+    background: url('../src/assets/beach.jpg') no-repeat center/cover;
+}
+
+.favorites {
+    background: url('../src/assets/heart.jpg') no-repeat center/cover;
+}
+
+.own_affirmations {
+    background: url('../src/assets/background1.jpg') no-repeat center/cover;
+}
+
+.general, .favorites, .own_affirmations {
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    padding: 20px;
+    height: 200px;
+    width: 260px;
+    color: white;
+    border-radius: 12px;
+  }
+  
+  .general p, .favorites p, .own_affirmations p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem;
+  }

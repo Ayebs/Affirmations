@@ -1,0 +1,27 @@
+.searchBar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .searchIcon {
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .searchInput {
+    width: 0;
+    opacity: 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: width 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .searchInput.expanded {
+    width: 200px;
+    opacity: 1;
+  }
+  
