@@ -23,15 +23,12 @@ public class AffirmController {
     }
 
     @GetMapping("/random")
-    public String getRandomAffirmation() {
-        return affirmService.getRandomAffirmation().getText();
+    public Affirmation getRandomAffirmation() {
+        return affirmService.getRandomAffirmation();
     }
 
     @GetMapping("/all")
-    public String getAllAffirmations() {
-        StringBuilder result = new StringBuilder();
-        affirmService.getAllAffirmations().forEach(affirmation ->
-                result.append(affirmation.getText()).append("\n"));
-        return result.toString();
+    public List<Affirmation> getAllAffirmations() {
+        return affirmService.getAllAffirmations();
     }
 }
