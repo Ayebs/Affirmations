@@ -29,8 +29,8 @@ public class AffirmServiceImpl implements AffirmService {
             affirmationRepository.save(new Affirmation("Je reflète la gloire et la beauté de Jésus 🥰️"));
             affirmationRepository.save(new Affirmation("Je suis la lumière du monde ✨"));
             affirmationRepository.save(new Affirmation("Je suis une joyeuse lumière d'espoir️ et de paix 😁"));
-            affirmationRepository.save(new Affirmation("Dieu se soucie de moi; il sínteresse a mon quotidien 🤗️"));
-            affirmationRepository.save(new Affirmation("Je ne suis pas timide; j'ai lésprit de force, d'amour et de sagesse!💜"));
+            affirmationRepository.save(new Affirmation("Dieu se soucie de moi; il s'intéresse a mon quotidien 🤗️"));
+            affirmationRepository.save(new Affirmation("Je ne suis pas timide; j'ai l'esprit de force, d'amour et de sagesse!💜"));
             affirmationRepository.save(new Affirmation("Dieu me juge précieux.se a ses yeux 🥹"));
             affirmationRepository.save(new Affirmation("Je ne crains aucun mal, Dieu est la force qui me sauve!️ 😉"));
             affirmationRepository.save(new Affirmation("Je suis une personne très bénie, grandement aidée par Dieu! 🤩"));
