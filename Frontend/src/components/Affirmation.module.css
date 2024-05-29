@@ -4,14 +4,14 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    background: url('../src/assets/greens.jpg') no-repeat center/cover;
+    /* background: url('../src/assets/greens.jpg') no-repeat center/cover; */
     overflow: hidden;
     box-sizing: border-box;
     height: 87.7vh;
 }
 
 .affirmation {
-    color: white; 
+    /* color: white;  */
     text-align: center;
     justify-content: center;
     margin-bottom: 20px;
@@ -42,7 +42,7 @@
 .greeting p {
     font-size: 1.2rem;
     font-weight: bold;
-    color: rgb(249, 129, 86);
+    color: #8644A2;
 }
 
 .btns {
@@ -55,7 +55,7 @@
 }
 
 .btns button {
-    background-color: rgb(249, 129, 86);
+    background-color: #E59BE9;
     padding: 15px 25px;
     color: #f4f6f6;
     border-radius: 6px;
@@ -67,8 +67,8 @@
   
   .btns:hover button {
     color: white;
-    border: 1px solid rgb(61, 197, 197);
-    background-color: rgb(61, 197, 197);
+    /* border: 1px solid #D862BC; */
+    background-color: #D862BC;
   }
 
   .category {
@@ -79,18 +79,18 @@
     align-items: center;
     gap: 10px;
     padding: 10px;
+    cursor: pointer;
     border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(237, 233, 233, 0.1);
+    box-shadow: 0 4px 6px rgba(237, 233, 233, 0.1);
 }
 
 .category span {
-    color: white;
+    color: #8644A2;
     font-size: 1.2rem;
 }
 
   .category button {
     font-size: 2rem;
     border: none;
-    color: rgb(249, 129, 86);
-    cursor: pointer;
+    color: #8644A2;
   }

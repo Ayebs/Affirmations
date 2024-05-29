@@ -13,12 +13,15 @@ function Nav() {
           <MdHome className={style.nav_icon} />
           <span>Home</span>
         </NavLink>
-        <NavLink to="/name" className={({ isActive}) => isActive ? style.active : "" }>
+        <NavLink to="/affirmation" className={({ isActive}) => isActive ? style.active : "" }>
+          <span>Personalize</span>
+        </NavLink>
+        {/* <NavLink to="/name" className={({ isActive}) => isActive ? style.active : "" }>
           <span>Name</span>
         </NavLink>
         <NavLink to="/gender" className={({ isActive}) => isActive ? style.active : "" }>
           <span>Gender</span>
-        </NavLink>
+        </NavLink> */}
         <NavLink to="/affirmation" className={({ isActive}) => isActive ? style.active : "" }>
           <span>Affirmation</span>
         </NavLink>

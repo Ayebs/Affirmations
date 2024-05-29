@@ -26,19 +26,19 @@
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: rgb(249, 129, 86);
+    color: #8644A2;
     border-radius: 4px;
     padding: 8px;
   }
   
-  .nav_link:hover {
-    background-color: rgb(61, 197, 197);
+  .nav_items a:hover {
+    background-color: #E59BE9;
     color: #f4f6f6;
     font-weight: 500;
   }
   
   a.active {
-    background-color: rgb(61, 197, 197);
+    background-color: #D862BC;
     color: #f4f6f6;
     text-decoration: none;
   }
@@ -60,9 +60,9 @@
     border-radius: 4px;
   }
   
-  .logo p {
+  /* .logo p {
     font-weight: bold;
     color: #3754a4;
     margin-bottom: 2rem;
-  }
+  } */
   
