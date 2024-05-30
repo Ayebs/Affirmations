@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import style from "./Affirmation.module.css";
+import ReactLoading from "react-loading"
 import image from "../assets/background1.jpg";
 import { BiCategory } from "react-icons/bi";
 import { GoHeart } from "react-icons/go";
@@ -54,7 +55,11 @@ function Affirmation() {
   };
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+        <ReactLoading type="balls" color="purple" height={100} width={80} />
+      </div>
+    )  
   }
 
   if (error) {

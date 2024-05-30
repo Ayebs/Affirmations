@@ -16,14 +16,13 @@
     justify-content: center;
     margin-bottom: 20px;
     width: 480px;
-
 }
 
 .affirmation p {
     margin: 5px 0;
     font-size: 2rem;
 
-}
+} 
 
 .greeting {
     display: flex;

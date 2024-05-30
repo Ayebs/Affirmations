@@ -28,7 +28,7 @@ function General() {
   };
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <p className={style.loading}>Loading...</p>;
   }
 
   if (error) {
