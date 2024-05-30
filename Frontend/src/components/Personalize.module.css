@@ -54,3 +54,7 @@
     flex-direction: column;
     padding: 0.6rem;
 }
+
+.gender_options button {
+     width: 160px;
+}

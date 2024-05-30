@@ -4,7 +4,8 @@ import Welcome from './components/Welcome.jsx'
 import Name from './components/Name.jsx'
 import Gender from './components/Gender.jsx'
 import Affirmation from './components/Affirmation.jsx'
-import Categories from './components/Categories.jsx'
+import General from './components/General.jsx'
+import Collections from './components/Collections.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 
@@ -30,13 +31,21 @@ const router = createBrowserRouter([
         path: "/gender",
         element: <Gender />,          
       },
+      // {
+      //   path: "/personalize",
+      //   element: <Personalize />,          
+      // },
       {
         path: "/affirmation",
         element: <Affirmation />,          
       },
       {
         path: "/categories",
-        element: <Categories />,          
+        element: <Collections />,          
+      },
+      {
+        path: "/general",
+        element: <General />,          
       },
     ]
   }
