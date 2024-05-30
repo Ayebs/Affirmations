@@ -51,13 +51,13 @@ function Affirmation() {
   // };
 
   const handleCategories = () => {
-    navigate("/categories");
+    navigate("/collections");
   };
 
   if (loading) {
     return (
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-        <ReactLoading type="balls" color="purple" height={100} width={80} />
+        <ReactLoading type="spokes" color="purple" height={100} width={80} />
       </div>
     )  
   }

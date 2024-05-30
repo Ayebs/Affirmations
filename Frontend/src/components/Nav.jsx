@@ -25,7 +25,7 @@ function Nav() {
         <NavLink to="/affirmation" className={({ isActive}) => isActive ? style.active : "" }>
           <span>Affirmation</span>
         </NavLink>
-        <NavLink to="/categories" className={({ isActive}) => isActive ? style.active : "" }>
+        <NavLink to="/collections" className={({ isActive}) => isActive ? style.active : "" }>
           <span>Collections</span>
         </NavLink>
       </div>

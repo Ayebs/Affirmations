@@ -1,9 +1,16 @@
 import React, { useEffect, useState } from "react";
-import style from "./General.module.css"
+import style from "./General.module.css";
+import ReactLoading from "react-loading";
+import { useNavigate } from "react-router-dom"
+import "../App.css"
+
+
 function General() {
   const [affirmations, setAffirmations] = useState("");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  const navigate = useNavigate()
 
   useEffect(() => {
     getAllAffirmations();
@@ -28,17 +35,32 @@ function General() {
   };
 
   if (loading) {
-    return <p className={style.loading}>Loading...</p>;
+    return (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+        }}
+      >
+        <ReactLoading type="spokes" color="purple" height={100} width={80} />
+      </div>
+    );
   }
 
   if (error) {
     return <div>Error: {error.message}</div>;
   }
 
+  const routeBack = () => {
+    navigate("/collections")
+  }
+  
+ 
   return (
     <div className={style.affirmations}>
-      <div className={style.affirmation}>
-        <p>All affirmations</p>
+        <h3>All affirmations</h3>
         {affirmations.length > 0 ? (
           <ul>
             {affirmations.map((affirmation, index) => (
@@ -48,7 +70,10 @@ function General() {
         ) : (
           <p>No affirmation found</p>
         )}
-      </div>
+
+        <div className="btns">
+            <button onClick={routeBack}>Back</button>
+        </div>
     </div>
   );
 }

@@ -25,6 +25,10 @@
     align-items: center;
 }
 
+.categories p {
+    cursor: pointer;
+}
+
 .general {
     background: url('../src/assets/beach.jpg') no-repeat center/cover;
 }

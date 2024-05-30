@@ -8,4 +8,23 @@
     height: 100%;
   }
 
+  .btns button {
+    background-color: #E59BE9;
+    padding: 15px 25px;
+    color: #f4f6f6;
+    border-radius: 6px;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .btns:hover button {
+    color: white;
+    /* border: 1px solid #D862BC; */
+    background-color: #D862BC;
+  }
+
+
+
 

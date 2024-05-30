@@ -1,13 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Search from "./Search.jsx";
-import style from "./Categories.module.css";
+import style from "./Collections.module.css";
 
 function Collections() {
   const navigate = useNavigate();
 
   const handleGeneralAffirmations = () => {
     navigate("/general");
+  };
+
+  const routeToFavorites = () => {
+    navigate("/fav")
+  }
+
+  const handleMyAffirmations = () => {
+    navigate("/myaffirmations");
   };
 
   return (
@@ -23,11 +31,11 @@ function Collections() {
         </div>
 
         <div className={style.favorites}>
-          <p>Favorites</p>
+          <p onClick={routeToFavorites}>Favorites</p>
         </div>
 
         <div className={style.own_affirmations}>
-          <p>My own affirmations</p>
+          <p onClick={handleMyAffirmations}>My own affirmations</p>
         </div>
       </div>
     </div>
