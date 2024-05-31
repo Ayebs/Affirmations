@@ -7,7 +7,7 @@ function Gender() {
   const navigate = useNavigate();
 
   const handleNextPage = () => {
-    navigate("/affirmations");
+    navigate("/affirmation");
   };
 
   return (

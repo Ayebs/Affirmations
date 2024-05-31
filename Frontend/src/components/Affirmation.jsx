@@ -18,6 +18,10 @@ function Affirmation() {
   //Getting username
   const username = "ayebs";
 
+  const handleAddFavorite = () => {
+
+  }
+
   useEffect(() => {
     getRandomAffirmation();
   }, []);
@@ -70,6 +74,7 @@ function Affirmation() {
     return <div>Error: {error.message}</div>;
   }
 
+
   return (
     <div className={style.affirm_container}>
       <div className={style.greeting}>
@@ -90,7 +95,7 @@ function Affirmation() {
 
       <div className={style.btns}>
         <button onClick={getRandomAffirmation}>New Affirmation</button>
-        <button>
+        <button onClick={handleAddFavorite}>
           <GoHeart />
         </button>
         <button>Translate</button>
