@@ -1,7 +1,15 @@
 import React from "react";
 import style from "./Personalize.module.css";
+import { GrFormNextLink } from "react-icons/gr";
+import { useNavigate } from "react-router-dom";
 
 function Gender() {
+  const navigate = useNavigate();
+
+  const handleNextPage = () => {
+    navigate("/affirmations");
+  };
+
   return (
     <div className={style.gender_container}>
       <div className={style.gender_text}>
@@ -15,7 +23,10 @@ function Gender() {
         <button>Male</button>
         <button>Female</button>
         <button>Other</button>
-    </div>
+      </div>
+      <button className="btns" onClick={handleNextPage}>
+        <GrFormNextLink />
+      </button>
     </div>
   );
 }

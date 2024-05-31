@@ -14,10 +14,12 @@ function Welcome() {
 
   return (
     <div className={style.Welcome}>
+      <div className={style.Welcome_text}>
       <h1>Welcome</h1>
       <h3>"Je pense donc je suis!"</h3>
-      <div className={style.btn}>
+      <div className="btns">
         <button onClick={handleStart}>Get started</button>
+      </div>
       </div>
     </div>
   );

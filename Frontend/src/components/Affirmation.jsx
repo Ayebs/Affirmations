@@ -10,9 +10,13 @@ import { GoHeart } from "react-icons/go";
 function Affirmation() {
   const [affirmation, setAffirmation] = useState("");
   // const [Translation, setTranslation] = useState("");
+  const [favorite, setFavorite] =useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
+
+  //Getting username
+  const username = "ayebs";
 
   useEffect(() => {
     getRandomAffirmation();

@@ -1,38 +1,34 @@
 .Welcome {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* color: black; */
-    gap: 1rem;
-    background: url('../src/assets/lighthouse.jpg') no-repeat center/cover;
-    overflow: hidden;
-    box-sizing: border-box;
-    height: 87.7vh;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: url("../src/assets/lighthouse.jpg") no-repeat center/cover;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 87.7vh;
+}
 
-  .Welcome h1 {
-    font-size: 4rem;
-  }
+.Welcome_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(138, 118, 141, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.2px);
+  -webkit-backdrop-filter: blur(4.2px);
+  border: 1px solid rgba(241, 151, 244, 0.3);
+}
 
-  .Welcome h3 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-  
-  .Welcome .btn button {
-    background-color: #D862BC;
-    padding: 15px 25px;
-    color: #f4f6f6;
-    border-radius: 6px;
-    border: 0;
-    cursor: pointer;
-    font-size: 1.2rem;
-    transition: background-color 0.2s ease;
-  }
+.Welcome h1 {
+  font-size: 4rem;
+}
 
-  .btn:hover button {
-    color: white;
-    /* border: 1px solid rgb(61, 197, 197); */
-    background-color: #E59BE9;
-  }
+.Welcome h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
