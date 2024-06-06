@@ -14,8 +14,11 @@ public class Config {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
-                        .allowedOrigins("http://localhost:5173")
-                        .allowedMethods("GET");
+                        .allowedOrigins("http://localhost:5173", "chrome-extension://hahkclcnohcmdggfeignbkkbdodjpdak")
+                        .allowedMethods("GET", "POST", "PUT", "HEAD", "OPTIONS")
+                        .allowedHeaders("*")
+                        .allowCredentials(true);
+
             }
         };
     }
